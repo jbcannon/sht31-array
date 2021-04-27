@@ -1,4 +1,4 @@
-# SHT31-D Temperature and Humidity array assembly protocol
+# SHT31-D temperature and Humidity array assembly protocol
 
 Tanner Warren and Jeffery Cannon
 
@@ -20,11 +20,11 @@ Tanner Warren and Jeffery Cannon
 
 ## Assembly
 
--	Prep each end of the cable by stripping ~3 cm of the main shielding away from the four wires inside, and then ~1 cm of shielding away from each of the wires.
+- Prep each end of the cable by stripping ~3 cm of the main shielding away from the four wires inside, and then ~1 cm of shielding away from each of the wires.
 
 <img src=docs/shtassembly_1.png width=200></img>
 
--	Place the SHT31 sensor in the clamp or on a surface where the wires are easily fed through each pinhole on the board. Solder each wire individually in its respective place (suggested placements are indicated below). Good solder joints should resemble a bell-shape or Hershey’s kiss rather than a sphere-shape which indicates additional flux may be needed. See here for [tips on soldering breakout boards](http://www.youtube.com/watch?v=3230nCz3XQA&t=3m40s).
+- Place the SHT31 sensor in the clamp or on a surface where the wires are easily fed through each pinhole on the board. Solder each wire individually in its respective place (suggested placements are indicated below). Good solder joints should resemble a bell-shape or Hershey’s kiss rather than a sphere-shape which indicates additional flux may be needed. See here for [tips on soldering breakout boards](http://www.youtube.com/watch?v=3230nCz3XQA&t=3m40s).
 
 <img src=docs/shtassembly_2.png width=200></img>
 <img src=docs/shtassembly_3.png width=200></img>
@@ -52,6 +52,7 @@ SDA/SAA | Green
 
 <img src=docs/shtassembly_10.png width=200></img>
 
+**LEFT OFF HERE 4/27 Need to add photos and format**
 
 
 (Figure 10)
