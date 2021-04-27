@@ -34,11 +34,24 @@ GND | Black
 SCL | White
 SDA/SAA | Green
 
+-	Trim the excess length from each wire to the top of the solder and straighten wire out so that the sensor and cable are in line. Test the sensor using an assembled tester and Arduino software to ensure all connections are correctly made.
 
--	Trim the excess length from each wire to the top of the solder and straighten wire out so that the sensor and cable are in line. (Figure 5)
--	Test the sensor using an assembled tester and Arduino software to ensure all connections are correctly made. (Figure 6)
--	Cut a piece of small diameter heat shrink long enough to cover the exposed wires of the sensor (no longer than 4 cm to ensure that the sensor can correctly slide into housing) and place on the cable. Use the heat gun/blow dryer to seal it in place. Then, cut a short piece (approximately 2 cm) of large diameter heat shrink and place over the soldered pins and most of the sensor. Do not cover the black square chip on the sensor with heat shrink. (Figure 7-9)
--Feed the bare end of the cable through the channel in the sensor mount and place a piece of small diameter heat shrink on the cable before attaching a plug. (Figure 10)
+<img src=docs/shtassembly_5.png width=200></img>
+<img src=docs/shtassembly_6.png width=200></img>
+
+-	Cut a piece of 1/4" diameter heat shrink long enough to cover the exposed wires of the sensor (no longer than 4 cm to ensure that the sensor can correctly slide into housing) and place on the cable. Use the heat gun/blow dryer to seal it in place. Then, cut a short piece (approximately 2 cm) of 1/2" diameter heat shrink and place over the soldered pins and most of the sensor. Do not cover the black square chip on the sensor with heat shrink. 
+	
+<img src=docs/shtassembly_7.png width=200></img>
+<img src=docs/shtassembly_8.png width=200></img>
+<img src=docs/shtassembly_9.png width=200></img>
+
+-Feed the bare end of the cable through the channel in the sensor mount and place a piece of small diameter heat shrink on the cable before attaching a plug. 
+
+<img src=docs/shtassembly_10.png width=200></img>
+
+
+
+(Figure 10)
 -Cut the wires of the plug down to ~2 cm long and strip ~0.5 cm away from the end (these wires are stranded and need to be twisted at the ends in order to keep internal wires together). 
 -Tin the ends of each wire on both the plug and the cable. (Figure 11-13)
 -Ensure the wires are lined up in the appropriate order as show in the “Plug Wiring” table. Then apply solder to the end of the soldering iron (held in the clamp if possible), take a wire in each hand, and simultaneously place them in the solder on the iron tip. Once they have enough solder on them, lift them out together and allow the solder to cool to complete the connection. This process can be repeated until a strong, even connection is made between the two. 
