@@ -2,7 +2,7 @@
 
 Tanner Warren and Jeffery Cannon
 
-<img src=docs/talltimbers_array_photo.jpg height=300></img>
+<img src=docs/talltimbers_array_photo.JPG height=300></img>
 <img src=docs/sht31-chip.jpg height=300></img>
 
 ## Tools
