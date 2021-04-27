@@ -1,6 +1,9 @@
-# SHT31-D Temperature and Humidity Assembly Protocol
+# SHT31-D Temperature and Humidity array assembly protocol
 
 Tanner Warren and Jeffery Cannon
+
+<img src=docs/talltimbers_arary_photo.jpg height=300></img>
+<img src=docs/sht31-chip.jpg height=300></img>
 
 ## Tools
 -	Soldering iron and lead-free solder
