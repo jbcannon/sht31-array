@@ -18,9 +18,23 @@ Tanner Warren and Jeffery Cannon
 ## Assembly
 
 -	Prep each end of the cable by stripping ~3 cm of the main shielding away from the four wires inside, and then ~1 cm of shielding away from each of the wires.
-<img src=docs/shtassembly1.png width=200></img>
 
--	Place the SHT31 sensor in the clamp or on a surface where the wires are easily fed through each pinhole on the board. Solder each wire individually in its respective place (placements are indicated in the “Sensor Wiring” table). (Figure 2-4) Good solder joints should resemble a bell-shape or Hershey’s kiss rather than a sphere-shape which indicates additional flux may be needed.
+<img src=docs/shtassembly_1.png width=200></img>
+
+-	Place the SHT31 sensor in the clamp or on a surface where the wires are easily fed through each pinhole on the board. Solder each wire individually in its respective place (suggested placements are indicated below). Good solder joints should resemble a bell-shape or Hershey’s kiss rather than a sphere-shape which indicates additional flux may be needed. See here for [tips on soldering breakout boards](http://www.youtube.com/watch?v=3230nCz3XQA&t=3m40s).
+
+<img src=docs/shtassembly_2.png width=200></img>
+<img src=docs/shtassembly_3.png width=200></img>
+<img src=docs/shtassembly_4.png width=200></img>
+
+Pin | Cable
+-- | --
+VIN | Red
+GND | Black
+SCL | White
+SDA/SAA | Green
+
+
 -	Trim the excess length from each wire to the top of the solder and straighten wire out so that the sensor and cable are in line. (Figure 5)
 -	Test the sensor using an assembled tester and Arduino software to ensure all connections are correctly made. (Figure 6)
 -	Cut a piece of small diameter heat shrink long enough to cover the exposed wires of the sensor (no longer than 4 cm to ensure that the sensor can correctly slide into housing) and place on the cable. Use the heat gun/blow dryer to seal it in place. Then, cut a short piece (approximately 2 cm) of large diameter heat shrink and place over the soldered pins and most of the sensor. Do not cover the black square chip on the sensor with heat shrink. (Figure 7-9)
