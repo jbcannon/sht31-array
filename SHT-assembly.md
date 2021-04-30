@@ -20,6 +20,19 @@ Tanner Warren and Jeffery Cannon
 
 ## Assembly
 
+- Cut a piece of 22 AWG 4-wire cable to the desired length. For our 8 sensor array, we mounted a data logger at 1.5 m. For this height, cut lenghts according to the following table
+
+Height | Cable length
+-- | --
+6 m | ~5 m
+5 m | ~4 m
+4 m | ~3 m
+3 m | ~2 m
+2 m | ~0.75-1 m
+1 m | ~0.75-1 m
+0.5 m | ~1.5 m
+0 m | ~2 m
+
 - Prep each end of the cable by stripping ~3 cm of the main shielding away from the four wires inside, and then ~1 cm of shielding away from each of the wires.
 
 <img src=docs/shtassembly_1.png width=200></img>
@@ -71,6 +84,9 @@ SDA/SAA | Green
 <img src=docs/shtassembly_14.png width=200></img>
 <img src=docs/shtassembly_15.png width=200></img>
 
-- Cut small pieces of electrical tape and wrap them around each exposed connection between the cable and the plug (Figure 17). Trim any excess and then slide heat shrink down over the bare wires and use the heat gun/blow dryer to seal it. (Figure 18)
-- Test the entire sensor using the assembled tester and Arduino software. (Figure 19)
-- label the back of the sensor mount with the appropriate mounting height (depends on the length of the cable). Refer to the “Sensor Height” table.
+- Cut small pieces of electrical tape and wrap them around each exposed connection between the cable and the plug. Trim any excess and then slide heat shrink down over the bare wires and use the heat gun/blow dryer to seal it.
+
+<img src=docs/shtassembly_16.png width=200></img>
+<img src=docs/shtassembly_17.png width=200></img>
+
+- Label the back of the sensor mount with the appropriate mounting height (depends on the length of the cable). Refer to the “Sensor Height” table.
