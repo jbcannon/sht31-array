@@ -48,18 +48,29 @@ SDA/SAA | Green
 <img src=docs/shtassembly_8.png width=200></img>
 <img src=docs/shtassembly_9.png width=200></img>
 
--Feed the bare end of the cable through the channel in the sensor mount and place a piece of small diameter heat shrink on the cable before attaching a plug. 
+** NEED TO ADD LINK to MOUNT **
+
+-Feed the bare end of the cable through the channel into the [3d printed sensor mount](#).
 
 <img src=docs/shtassembly_10.png width=200></img>
 
-**LEFT OFF HERE 4/27 Need to add photos and format**
+- Repeat the above steps until you have 8 sesnor assemblies.
+- If your data logger uses screw terminals (e.g., the Margay logger which we recommend) then assembly of the a single unit is complete.  In our experience the JST plugs are brittle and thus somewhat finicky. However, if you would like to add an JST 4-pin plug for some devices, continue on to the additional steps. 
 
+<hr>
 
-(Figure 10)
--Cut the wires of the plug down to ~2 cm long and strip ~0.5 cm away from the end (these wires are stranded and need to be twisted at the ends in order to keep internal wires together). 
--Tin the ends of each wire on both the plug and the cable. (Figure 11-13)
+- Slide a 3" piece of 1/4" diameter heat shrink on the cable before attaching a plug. Once the plug is installed you will no longer be able to add the heat shrink.
+- Cut the wires of the plug down to ~2 cm long and strip ~0.5 cm away from the end (these wires are stranded and need to be twisted at the ends in order to keep internal wires together). Tin the ends of each wire on both the plug and the cable. (Figure 11-13)
+
+<img src=docs/shtassembly_11.png width=200></img>
+<img src=docs/shtassembly_12.png width=200></img>
+
 -Ensure the wires are lined up in the appropriate order as show in the “Plug Wiring” table. Then apply solder to the end of the soldering iron (held in the clamp if possible), take a wire in each hand, and simultaneously place them in the solder on the iron tip. Once they have enough solder on them, lift them out together and allow the solder to cool to complete the connection. This process can be repeated until a strong, even connection is made between the two. 
-(Figure 14-16)   
+
+<img src=docs/shtassembly_13.png width=200></img>
+<img src=docs/shtassembly_14.png width=200></img>
+<img src=docs/shtassembly_15.png width=200></img>
+
 - Cut small pieces of electrical tape and wrap them around each exposed connection between the cable and the plug (Figure 17). Trim any excess and then slide heat shrink down over the bare wires and use the heat gun/blow dryer to seal it. (Figure 18)
 - Test the entire sensor using the assembled tester and Arduino software. (Figure 19)
 - label the back of the sensor mount with the appropriate mounting height (depends on the length of the cable). Refer to the “Sensor Height” table.
