@@ -16,7 +16,7 @@ Tanner Warren and Jeffery Cannon
 ## Materials
 -	SHT31-D breakout board (e.g., from [Aliexpress](https://www.aliexpress.com/item/32850554676.html) or [Amazon](https://www.amazon.com/Temperature-SHT31-D-Humidity-Breakout-Weather/dp/B073P6G2Q4/))
 -	Shielded cable, 4 wire, solid core 22 AWG (lengths will vary)
--	Heat shrink tubing (1/4" and 1/2" diameter ([Amazon](https://www.amazon.com/gp/product/B01KYFZRQW))
+-	Heat shrink tubing (1/4" and 1/2" diameter ([Amazon](https://www.amazon.com/gp/product/B01KYFZRQW)))
 
 ## Assembly
 
