@@ -78,7 +78,14 @@ SDA/SAA | Green
 <img src=docs/shtassembly_11.png width=200></img>
 <img src=docs/shtassembly_12.png width=200></img>
 
--Ensure the wires are lined up in the appropriate order as show in the “Plug Wiring” table. Then apply solder to the end of the soldering iron (held in the clamp if possible), take a wire in each hand, and simultaneously place them in the solder on the iron tip. Once they have enough solder on them, lift them out together and allow the solder to cool to complete the connection. This process can be repeated until a strong, even connection is made between the two. 
+-Ensure the wires are lined up in the appropriate order as show in the wiring table below. Then apply solder to the end of the soldering iron (held in the clamp if possible), take a wire in each hand, and simultaneously place them in the solder on the iron tip. Once they have enough solder on them, lift them out together and allow the solder to cool to complete the connection. This process can be repeated until a strong, even connection is made between the two. 
+
+Plug | Cable | Sensor
+-- | -- | --
+Black | Red | VIN
+Red | Black | GND
+White | White | SCL
+Yellow | Green |SDA/SAA
 
 <img src=docs/shtassembly_13.png width=200></img>
 <img src=docs/shtassembly_14.png width=200></img>
