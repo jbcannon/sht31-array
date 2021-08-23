@@ -1,4 +1,23 @@
-We have developed a temperature-humidity array for use in applications in forest and fire ecology. The following instructions provide step-by-step instructions for assembling the arrays, and options for data-loggers, and software are included.
+We have developed a temperature-humidity array for use in applications in forest and fire ecology. The following instructions provide step-by-step instructions for assembling the arrays and dataloggers. We also include software development and installation, and provide files to fabricate 3d-printed radiation shields, enclosures, and files necessary for manufacturing printed circuit boards for multiplexing.
+
+# Overview
+
+The following document provides detailed instructions on fabrication of SHT31-D sensor arrays. Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. 
+
+* Fabricate [temperature and humidity sensor arrays](#SHT31-D-Sensor-arrays) (8x sensors)
+* Fabricate 3d printed radiation shields
+* Prepare Particle Boron-based dataloggers
+  * Testing Particle Boron
+  * Programing Particle Boron
+  * Setting up cellular cloud data upload
+* Fabricate datalogger assembly
+* Sensor array deployment 
+
+Materials required for each section are listed in the corresponding section
+
+# SHT31-D Sensor arrays
+
+
 
 # 3D printing
 
