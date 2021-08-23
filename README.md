@@ -1,5 +1,7 @@
 We have developed a temperature-humidity array for use in applications in forest and fire ecology. The following instructions provide step-by-step instructions for assembling the arrays and dataloggers. We also include software development and installation, and provide files to fabricate 3d-printed radiation shields, enclosures, and files necessary for manufacturing printed circuit boards for multiplexing.
 
+[figs/sensor-fig.png](the caption i want)
+
 # Overview
 
 The following document provides detailed instructions on fabrication of SHT31-D sensor arrays. Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. 
