@@ -16,8 +16,8 @@ Tanner Warren and Jeffery Cannon
 ## Materials
 -	SHT31-D breakout board (e.g., from [Adafruit](https://www.adafruit.com/product/2857), [Aliexpress](https://www.aliexpress.com/item/32850554676.html) or [Amazon](https://www.amazon.com/Temperature-SHT31-D-Humidity-Breakout-Weather/dp/B073P6G2Q4/))
 -	Shielded cable, 4 wire, solid core 22 AWG (lengths will vary)
--	Heat shrink tubing (1/4" and 1/2" diameter ([Amazon](https://www.amazon.com/gp/product/B01KYFZRQW)))
--	JST or other 4-pine connectors (if your datalogger requries it). The Particle Boron-based dataloggers we recommend do not require connectors.
+-	Heat shrink tubing (1/4" and 1/2" diameter ([Amazon](https://www.amazon.com/gp/product/B01KYFZRQW))
+-	JST or other 4-pin connectors (if your datalogger requries it). The Particle Boron-based dataloggers we recommend do not require connectors. [Amazon](https://www.amazon.com/Connector-Include-Ph2-0-Female-Ph2-0mm/dp/B08RHGT3W3/)
 
 ## Assembly
 
