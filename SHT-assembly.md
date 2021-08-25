@@ -72,7 +72,7 @@ SDA/SAA | Green
 
 <hr>
 
-- **If you would like to connect a JST or another plug**, Slide a 3" piece of 1/4" diameter heat shrink on the cable before attaching a plug. Once the plug is installed you will no longer be able to add the heat shrink.
+- **If your datalogger requires a JST or other plug**, Slide a 3" piece of 1/4" diameter heat shrink on the cable before attaching a plug. Once the plug is installed you will no longer be able to add the heat shrink.
 - Cut the wires of the plug down to ~2 cm long and strip ~0.5 cm away from the end (these wires are stranded and need to be twisted at the ends in order to keep internal wires together). Tin the ends of each wire on both the plug and the cable. (Figure 11-13)
 
 <img src=figs/shtassembly_11.png width=200></img>
