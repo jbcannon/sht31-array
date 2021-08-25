@@ -14,7 +14,7 @@ Tanner Warren and Jeffery Cannon
 -	heat gun, blow dryer, or lighter for heat shrink
 
 ## Materials
--	SHT31-D breakout board (e.g., from [Aliexpress](https://www.aliexpress.com/item/32850554676.html) or [Amazon](https://www.amazon.com/Temperature-SHT31-D-Humidity-Breakout-Weather/dp/B073P6G2Q4/))
+-	SHT31-D breakout board (e.g., from [Adafruit](https://www.adafruit.com/product/2857), [Aliexpress](https://www.aliexpress.com/item/32850554676.html) or [Amazon](https://www.amazon.com/Temperature-SHT31-D-Humidity-Breakout-Weather/dp/B073P6G2Q4/))
 -	Shielded cable, 4 wire, solid core 22 AWG (lengths will vary)
 -	Heat shrink tubing (1/4" and 1/2" diameter ([Amazon](https://www.amazon.com/gp/product/B01KYFZRQW)))
 
@@ -68,10 +68,10 @@ SDA/SAA | Green
 <img src=docs/shtassembly_10.png width=200></img>
 
 - Repeat the above steps until you have 8 sesnor assemblies.
-- If your data logger uses screw terminals (e.g., the Margay logger which we recommend) then assembly of the a single unit is complete.  In our experience the JST plugs are brittle and thus somewhat finicky. However, if you would like to add an JST 4-pin plug for some devices, continue on to the additional steps. 
+- *If you are using a data logger uses screw terminals* (e.g., the Particle Boron-based logger which we recommend), then assembly of the a single unit is complete. 
 
 <hr>
-
+- *If your logger uses JST or other connectors* continue on to these additional steps. However, in our experience the JST plugs are brittle and thus somewhat finicky.
 - Slide a 3" piece of 1/4" diameter heat shrink on the cable before attaching a plug. Once the plug is installed you will no longer be able to add the heat shrink.
 - Cut the wires of the plug down to ~2 cm long and strip ~0.5 cm away from the end (these wires are stranded and need to be twisted at the ends in order to keep internal wires together). Tin the ends of each wire on both the plug and the cable. (Figure 11-13)
 
