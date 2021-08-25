@@ -1,7 +1,5 @@
 # SHT31-D temperature and Humidity array assembly protocol
 
-Tanner Warren and Jeffery Cannon
-
 <img src=figs/talltimbers_array_photo.JPG height=300></img>
 <img src=figs/sht31-chip.jpg height=300></img>
 
