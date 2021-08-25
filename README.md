@@ -20,7 +20,7 @@ Each section begins with materials required for assembly. Please read all instru
 
 # SHT31-D Sensor arrays
 
-
+The SHT-31D sensors is an accuract temperature and humidity sensor with an accuracy of ±0.3°C and ±2% relative humidty. The sensor uses I<sup>2</sup>C connections and is therefore compatabile with a wide variety of other I<sup>2</sup>C digital sensors allowing building more complex micro-metereological stations.
 
 # 3D printing
 
