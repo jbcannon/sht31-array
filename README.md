@@ -9,13 +9,13 @@ We have developed a temperature-humidity array for use in applications in forest
 
 Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. The material presented below details the construction of sensor and data loggers used in Cannon et al. XXXX. See manuscript for complete details on theory and applications.
 
+* Complete Particle Boron datalogger assembly (1x)
+* Fabricate 3d printed radiation shields (8x)
 * Fabricate [temperature and humidity sensor arrays](#SHT31-D-Sensor-arrays) (8x sensors)
-* Fabricate 3d printed radiation shields
-* Prepare Particle Boron-based dataloggers
+* Setting up Particle Boron-based dataloggers
   * Testing Particle Boron
   * Programing Particle Boron
   * Setting up cellular cloud data upload
-* Fabricate datalogger assembly
 * Sensor array deployment 
 
 # SHT31-D Sensor arrays
