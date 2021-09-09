@@ -33,7 +33,7 @@ The Particle Boron is a development kit that support cellular network. This guid
 
 <img src=../figs/tca-pcb-gerber.PNG width=300></img>
 
-Donwload [Custom PCB \*.gerber](../files/Custom_PCB_gerber.zip) files.
+Donwload and print custom PCB using the [Custom PCB \*.gerber](../files/Custom_PCB_gerber.zip) files.
 
 - Insert the male header pins for TCA9548A into the custom PCB board. Solder all male header pins to the TCA9548A Multiplexer.
 
