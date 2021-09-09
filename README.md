@@ -9,7 +9,7 @@ We have developed an open-platform temperature-humidity array for use in applica
 
 Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. The material presented below details the construction of sensor and data loggers used in Cannon et al. XXXX. See manuscript for complete details on theory and applications.
 
-* Complete Particle Boron datalogger assembly (1x)
+* Complete assembly of [Particle Boron dataloggers](#SHT31-D-Sensor-arrays) (1x)
 * Fabricate 3d printed radiation shields (8x)
 * Fabricate [temperature and humidity sensor arrays](#SHT31-D-Sensor-arrays) (8x sensors)
 * Setting up Particle Boron-based dataloggers
