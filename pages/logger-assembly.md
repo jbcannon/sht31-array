@@ -2,7 +2,7 @@
 
 The Particle Boron is a development kit that support cellular network. This guide illustrates tools, materials, and instruction for connecting the Particle Boron to a Multiplexer to allow up to 8 identically addressed I<sup>2</sup>C busses. 
  
- **Please note that if you only need one or two SHT-31 sensors attached to a data logger, the multiplexer is unnecessary. Simply attach the Boron to the Terminal block, and insert a battery**
+ **Please note that if you only need one or two SHT-31 sensors attached to a data logger, the multiplexer is unnecessary. Simply attach the Boron to the Terminal block, and insert a battery**. The remaining steps involving the multiplexer are unnecessary and can be skipped.
 
 ## Tools
 - Soldering iron and lead-free solder
