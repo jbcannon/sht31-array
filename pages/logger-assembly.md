@@ -27,11 +27,11 @@ The Particle Boron is a development kit that support cellular network. This guid
 
 ## Assembly
 
- ** Please note that if you only need one or two SHT-31 sensors attached to a data logger, the multiplexer is unnecessary. Simply attach the Boron to the Terminal block, and insert a battery ** If you would like to add multiplexing capabilties, continue on.
+ **Please note that if you only need one or two SHT-31 sensors attached to a data logger, the multiplexer is unnecessary. Simply attach the Boron to the Terminal block, and insert a battery** If you would like to add multiplexing capabilties, continue on.
 
 - Order our custom, open source printed circuit board (PCB) which houses a multiplexer breakout board with screw terminal blocks. Download the \*.gerber files for our custom PCB. You can upload these files to any PCB printer. We use JLCPCB.com. Be sure to adjust surface finish to LeadFree HASL-RoHs. See this [video tutorial on ordering PCBs](https://www.youtube.com/watch?v=8r9syPCoZEs)
 
-<img src=../figs/tca-pcb-gerber.png width=200></img>
+<img src=../figs/tca-pcb-gerber.PNG width=300></img>
 
 Donwload [Custom PCB \*.gerber](../files/Custom_PCB_gerber.zip) files.
 
