@@ -22,7 +22,7 @@ Each section begins with materials required for assembly. Please read all instru
 
 The SHT-31D sensors is an accurate temperature and humidity sensor with an accuracy of ±0.3°C and ±2% relative humidty. The sensor uses I<sup>2</sup>C connections and is therefore compatabile with a wide variety of other I<sup>2</sup>C digital sensors allowing building more complex micro-metereological stations.
 
- Follow the link to find complete instructions to <a href=pages/SHT-assembly.md>building an SHT-31 sensor arrays</a>
+ Follow the link to find complete instructions to <a href=pages/SHT-assembly.md>building SHT-31 sensor arrays</a>
  
 <img src=figs/sht31-chip.jpg width=200></img>
 <img src=figs/shtassembly_5.png width=200></img>
