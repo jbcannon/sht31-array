@@ -1,8 +1,8 @@
 # Particle Boron datalogger assembly
 
-The Particle Boron is a development kit that support cellular network. This guide illustrates tools, materials, and instruction for connecting the Particle Boron to a Multiplexer to allow up to 8 identically addressed I<sup>2<sup>C busses. 
+The Particle Boron is a development kit that support cellular network. This guide illustrates tools, materials, and instruction for connecting the Particle Boron to a Multiplexer to allow up to 8 identically addressed I<sup>2</sup>C busses. 
  
- ** Please note that if you only need one or two SHT-31 sensors attached to a data logger, the multiplexer is unnecessary. Simply attach the Boron to the Terminal block, and insert a battery **
+ **Please note that if you only need one or two SHT-31 sensors attached to a data logger, the multiplexer is unnecessary. Simply attach the Boron to the Terminal block, and insert a battery**
 
 ## Tools
 - Soldering iron and lead-free solder
@@ -29,11 +29,13 @@ The Particle Boron is a development kit that support cellular network. This guid
 
  ** Please note that if you only need one or two SHT-31 sensors attached to a data logger, the multiplexer is unnecessary. Simply attach the Boron to the Terminal block, and insert a battery ** If you would like to add multiplexing capabilties, continue on.
 
-- Order our custom, open source printed circuit board (PCB) which houses a multiplexer breakout board with screw terminal blocks.
+- Order our custom, open source printed circuit board (PCB) which houses a multiplexer breakout board with screw terminal blocks. Download the \*.gerber files for our custom PCB. You can upload these files to any PCB printer. We use JLCPCB.com. Be sure to adjust surface finish to LeadFree HASL-RoHs. See this [video tutorial on ordering PCBs](https://www.youtube.com/watch?v=8r9syPCoZEs)
 
+<img src=../figs/tca-pcb-gerber.png width=200></img>
 
+Donwload [Custom PCB \*.gerber](../files/Custom_PCB_gerber.zip) files.
 
-- Insert the male header pins for TCA9548A into the PCB board. Solder all male header pins to the TCA9548A Multiplexer.
+- Insert the male header pins for TCA9548A into the custom PCB board. Solder all male header pins to the TCA9548A Multiplexer.
 
 <img src=../figs/loggerassembly-4.jpg width=200></img>
 
