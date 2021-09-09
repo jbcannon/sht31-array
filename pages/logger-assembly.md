@@ -8,14 +8,13 @@ Needs introduction and summary
 
 ## Materials
 
--	Particle Boron (LTE CAT-M1?)
--	Assembled Terminal Block Breakout FeatherWing
--	TAOGLAS FXUB63 Ultra Wide Band Antenna
--	5-6” length of 22AWG 4C Solid shielded cable
--	TCA9548A PCB Board
--	TCA9548A Multiplexer Module
--	9 4-pin screw terminals
--	3.7V Lithium Battery with 2-pin female plug 
+-	Particle Boron Kit (LTE CAT-M1) (NorAm) ([Particle](https://store.particle.io/collections/ethersim/products/boron-lte-cat-m1-noram-ethersim))
+-	Adafruit Terminal Block Breakout FeatherWing ([Adafruit](https://www.adafruit.com/product/2926))
+-	TCA9548A Multiplexer Module ([Adafruit](https://www.adafruit.com/product/2717) | [AliExpress](https://www.aliexpress.com/wholesale?SearchText=TCA9548A))
+-	TCA9548A PCB Board ([contact me](mailto:jeffery.cannon@jonesctr.org) for a few, or see below for ordering a custom PCB)
+-	5-6” length of 22AWG 4-wire solid core cable
+-	9 4-pin screw terminals ([AliExpress](https://www.aliexpress.com/item/32919824190.html))
+-	3.7V Lithium Battery with 2-pin female plug ([AliExpress](https://www.aliexpress.com/item/32846169676.html))
 
 <img src=../figs/loggerassembly-1.jpg width=200></img>
 <img src=../figs/loggerassembly-2.jpg width=200></img>
