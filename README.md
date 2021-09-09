@@ -18,7 +18,17 @@ Each section begins with materials required for assembly. Please read all instru
   * Setting up cellular cloud data upload
 * Sensor array deployment 
 
-# SHT31-D Sensor arrays
+ # Data logger Assembly (Particle Boron with multiplexer)
+ 
+ Our system uses Particle Boron microcontrollers which have cellular network capabilities allowing remote data upload,  comprehensive documentation, and support a number of analog and digital devices using I<sup>2</sup>C or SPI. Our system uses multiple identically addressed SHT-31 sensors which requires a multiplexer to allow reading of multiple sensors, thus we have created a custom printed circuit board that needs to be ordered or made.
+ 
+<img src=figs/loggerassembly-10.jpg width=200></img>
+<img src=figs/tca-pcb-gerber.PNG width=200></img>
+<img src=figs/loggerassembly-5.jpg width=200></img>
+
+ Follow the link to find complete instructions to <a href=pages/logger-assembly.md>assemble Particle Boron datalogger and multiplexer</a>
+
+ # SHT31-D Sensor arrays
 
 The SHT-31D sensors is an accurate temperature and humidity sensor with an accuracy of ±0.3°C and ±2% relative humidty. The sensor uses I<sup>2</sup>C connections and is therefore compatabile with a wide variety of other I<sup>2</sup>C digital sensors allowing building more complex micro-metereological stations.
 
