@@ -53,6 +53,6 @@ Donwload and print custom PCB using the [Custom PCB \*.gerber](../files/Custom_P
 <img src=../figs/loggerassembly-8.jpg width=200></img>
 <img src=../figs/loggerassembly-9.jpg width=200></img>
 
-- Plug the 3.7V battery into the Particle Boron using the 2-pin female plug, and arrange the completed components as shown for the most compact configuration (can be zip-tied to ensure they stay together).
+- Plug the 3.7V battery into the Particle Boron using the 2-pin female plug, and arrange the completed components as shown for the most compact configuration (can be zip-tied to ensure they stay together but you may want to wait until all sensors are attached to allow access to ports).
 
 <img src=../figs/loggerassembly-10.jpg width=200></img>
