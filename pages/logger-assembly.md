@@ -29,8 +29,8 @@ Needs introduction and summary
 
 - Insert a 4-pin screw terminal into each designated slot in the PCB board, and then solder each one. Make sure to apply a little extra solder to these in order to reinforce them for repeated use.
 
-<img src=../figs/loggerassembly-5.jpg width=200></img>
-<img src=../figs/loggerassembly-6.jpg width=200></img>
+<img src=../figs/loggerassembly-5.jpg height=200></img>
+<img src=../figs/loggerassembly-6.jpg height=200></img>
 
 - Attach the antenna to the Particle Boron, and then dock the Particle Boron in the associated female header pins located on the Breakout board.
  
