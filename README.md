@@ -7,7 +7,8 @@ We have developed an open-platform temperature-humidity array for use in applica
 <figcaption align = "center"><font size = -1>Figure 1. (a-f) Development of environmental monitoring using open-source platforms. (a) Datalogging assembly based on Particle Boron microprocessor on a screw terminal mount powered by a 3.7V 5000 mAH LiPo battery. Custom printed circuit board (PCB, red) includes I<sup>2</sup>C multiplexer chip allowing up to eight identically addressed sensors. (b) Datalogging assembly installed in weather resistant enclosure. (c) Comparison of Adafruit SHT31-D temperature and humidity sensor (left) and iButton Hygrochron (DS1932, right). (d) Minimalist radiation shield mount with installed SHT31-D sensor. (e) Custom PCB to use I<sup>2</sup>C multiplexer with 4-pin screw terminals. (f) 5-fin radiation shield 3D printed with PETG.<font></figcaption>
 </figure>
 
-Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. The material presented below details the construction of sensor and data loggers used in Cannon et al. XXXX. See manuscript for complete details on theory and applications.
+<p>
+ Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. The material presented below details the construction of sensor and data loggers used in Cannon et al. XXXX. See manuscript for complete details on theory and applications.
 
 * Complete assembly of [Particle Boron dataloggers](#data-logger-assembly-particle-boron-with-multiplexer) (1x)
 * Fabricate 3d printed radiation shields (8x)
