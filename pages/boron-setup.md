@@ -44,7 +44,7 @@ Click image to watch video
 
 <img src=../figs/setup-photo2.jpg width= 300></img>
 <img src=../figs/setup-photo3.jpg width= 300></img>
-<img src=../figs/setup-photo4.jpg width= 300></img>
+<img src=../figs/setup-photo4.jpg height = 300></img>
 
 -	In the Particle Web IDE, select the Code Symbol (< >) on the left hand side, and select Create New App
 -	Name the app `sht31-single` or similar
@@ -75,16 +75,15 @@ void loop() {
 }
 ```
 
-•	You will know the flash is successful when the cyan LED returns to blinking “breath” mode. Click on the Console icon. You will see an Events table listing all status updates related to your Particle devices. The app you created reads and uploads the temperature and humidity once per second.
-•	Verify that humidity and temperature readings are valid. If you are not getting readings, check all wired connections with the sensor.
-•	In areas with a slow cellular connection, readings may occur at great than 1 second intervals.
-•	Remove the SHT31-sensor form the breadboard and place each additional sensor in turn until all sensors are tested.
+- You will know the flash is successful when the cyan LED returns to blinking *breathe* mode. Click on the Console icon. You will see an Events table listing all status updates related to your Particle devices. The app you created reads and uploads the temperature and humidity once per second.
+- Verify that humidity and temperature readings are valid. If you are not getting readings, check all wired connections with the sensor.
+- In areas with a slow cellular connection, updates may occur at greater than 1 second intervals.
+- Remove the SHT31-sensor form the breadboard and repeat seven times, connecting each additional sensor on the breadboard in turn until all sensors are tested.
  
-
-I2C and cloud upload
-•	The Particle console offers a convenient way to communicate directly with the datalogger, but does not serve for convenient data storage. To setup data logging from Particle Boron to Google Sheets, you will need to use the following steps.
-•	Follow the steps to setup integration of Particle and Google Sheets https://github.com/deancs/particlePostGoogle . This script has you setup an empty GoogleSheet to contain data, integrate a script using the Script Editor, create and use a Particle security token, and link your script with a Particle Webhook
-•	Create a new app in the Particle Web IDE and paste the following code and Flash the script to your device.
+# I<sup>2</sup>C and cloud upload
+- The Particle console offers a convenient way to communicate directly with the datalogger, but does not serve for convenient data storage. To setup data logging from Particle Boron to Google Sheets, you will need to use the following steps.
+- Follow the steps to setup integration of Particle and Google Sheets (https://github.com/deancs/particlePostGoogle) . This script guides you through the process to setup an empty GoogleSheet to contain data, integrate a script using the Script Editor, create and use a Particle security token, and link your script with a Particle Webhook
+•	Create a new app in the Particle Web IDE and paste the following code and Flash the following script to your device.
 
 ```
 #include <adafruit-sht31.h>
@@ -143,10 +142,10 @@ float readHumid(int bus, int addr) {
 }
 ```
 
-Deployment
-•	Reconnect the i2C multiplexer assembly to the Screw terminal block 
-•	Connect up to eight SHT1 sensors to the screw terminals on the SHT31 assembly. Depending on the enclosure you wish to use, you may need to feed the lines through a valve in the enclosure before screwing them down.
-•	Use a zip-tie to bundle the Particle Boron, Multiplexer Assembly, and battery into one unit, and place in the enclosure.
-[Photo of completed device]
-•	Once turned on and connected, the device will upload 8 readings to the setup Google Sheets using the webhook and Google Script integration.
- 
+# Deployment
+- Reconnect the I<sup>2</sup>C multiplexer assembly to the Screw terminal block 
+- Connect up to eight SHT31 sensors to the screw terminals on the SHT31 assembly. Depending on the enclosure you wish to use, you may need to feed the lines through a valve in the enclosure before screwing them down.
+- Use a zip-tie to bundle the Particle Boron, Multiplexer Assembly, and battery into one unit, and place in the enclosure.
+- Once turned on and connected, the device will upload 8 readings to the setup Google Sheets using the webhook and Google Script integration. Each device you use will create its own tab in the Google worksheet
+
+<img src=../figs/loggerassembly-10.jpg height = 300></img> 
