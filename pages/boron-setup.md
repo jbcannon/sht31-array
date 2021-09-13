@@ -19,30 +19,39 @@ Click image to watch video
 * Once your Particle Boron is activated, it is best to complete a few tests to ensure your device is working properly.
 * Log in to the Particle Web IDE
 
-<img src=../figs/setup-capture1.png width= 200></img>
+<img src=../figs/setup-capture1.png width= 500></img>
 
 * Under Example apps, select the Blink an LED sketch from the list (Red arrow)
 * Check that the name of the device you just setup matches what is indicated by the yellow arrow. If not, click the name and indicate the correct device from the Particle Device list
 * Once the correct device is selected, click the Flash button (blue arrow). This will upload the sketch to the Boron. 
 * As the sketch is uploading, you should see a series of flashes. Slow blinking green means the device is searching for signal. Slow blinking cyan means Signal is found. Fast blinking cyan means data transfer is occurring. You may see a brief magenta light as the sketch is flashed onto the device. See here for a guide to Particle Boron LED status indicators
 * Once the sketch is successfully updated, you should see a blue blink from the LED located next to the USB connector on the Boron.
-•	[Photo here indicating LED]
- 
 
-Testing SHT31 sensor
-•	After successfully uploading the Blink sketch, we will connect a single SHT-31 sensor and upload a sketch that will upload the readings to Particles Cloud platform.
-•	Release the 4 wires connected to the I2C multiplexer PCB assembly, and place each wire into a bread board as shown below This will allow rapid connection of several single I2C devices to the Boron for testing and troubleshooting.
-•	Connect on of the assembled SHT31 sensors to the corresponding cables. If you followed our construction, the pin associations are
-Red	VCC
-Black	GND
-Green	SDA
-White	SCL
-•	[3 photos]
-•	In the Particle Web IDE, select the Code Symbol (< >) on the left hand side, and select Create New App
- 
-•	Name the app “sht31-single” or similar
-•	Select the Libraries button from the lefthand side (bookmark) and search “adafruit-sht31”. Select the library, and click the “Include in Project” button. Select the app you just named and confirm its inclusion.
-•	The following code reads the temperature and humidity of the logger and publishes it to Particles Console for viewing. Paste the following code into the code window and select the Flash button to upload the app.
+<img src=../figs/setup-photo1.jpg width= 300></img>
+
+## Testing SHT31 sensor
+
+-	After successfully uploading the Blink sketch, we will connect a single SHT-31 sensor and upload a sketch that will upload the readings to Particles Cloud platform.
+-	Release the 4 wires connected to the I<sup>2</sup>C multiplexer PCB assembly, and place each wire into a bread board as shown below This will allow rapid connection of several single I<sup>2</sup>C devices to the Boron for testing and troubleshooting.
+-	Connect one of the assembled SHT31 sensors to the corresponding cables. If you followed our construction, the pin associations are
+
+| Wire | Pin |
+| -- | -- |
+| Red	| VCC |
+| Black	| GND |
+| Green	| SDA |
+| White	| SCL |
+
+<img src=../figs/setup-photo2.jpg width= 300></img>
+<img src=../figs/setup-photo3.jpg width= 300></img>
+<img src=../figs/setup-photo4.jpg width= 300></img>
+
+-	In the Particle Web IDE, select the Code Symbol (< >) on the left hand side, and select Create New App
+-	Name the app `sht31-single` or similar
+-	Select the Libraries button from the lefthand side (bookmark) and search `adafruit-sht31`. Select the library, and click the “Include in Project” button. Select the app you just named and confirm its inclusion.
+-	The following code reads the temperature and humidity of the logger and publishes it to Particles Console for viewing. Paste the following code into the code window and select the Flash button to upload the app.
+
+```
 // This app reads a single an SHT-31 sensor connected via I2C and uploads to Particle Console
 #include <adafruit-sht31.h>
 Adafruit_SHT31 sht31 = Adafruit_SHT31();
@@ -64,6 +73,7 @@ void loop() {
       delay(1000);
     }
 }
+```
 
 •	You will know the flash is successful when the cyan LED returns to blinking “breath” mode. Click on the Console icon. You will see an Events table listing all status updates related to your Particle devices. The app you created reads and uploads the temperature and humidity once per second.
 •	Verify that humidity and temperature readings are valid. If you are not getting readings, check all wired connections with the sensor.
@@ -75,6 +85,8 @@ I2C and cloud upload
 •	The Particle console offers a convenient way to communicate directly with the datalogger, but does not serve for convenient data storage. To setup data logging from Particle Boron to Google Sheets, you will need to use the following steps.
 •	Follow the steps to setup integration of Particle and Google Sheets https://github.com/deancs/particlePostGoogle . This script has you setup an empty GoogleSheet to contain data, integrate a script using the Script Editor, create and use a Particle security token, and link your script with a Particle Webhook
 •	Create a new app in the Particle Web IDE and paste the following code and Flash the script to your device.
+
+```
 #include <adafruit-sht31.h>
 #include <TCA9534.h>
 
@@ -129,6 +141,7 @@ float readHumid(int bus, int addr) {
     float humid = sht31.readHumidity();
     return(humid);    
 }
+```
 
 Deployment
 •	Reconnect the i2C multiplexer assembly to the Screw terminal block 
