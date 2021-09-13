@@ -43,8 +43,8 @@ Click image to watch video
 | White	| SCL |
 
 <img src=../figs/setup-photo2.jpg width= 300></img>
-<img src=../figs/setup-photo3.jpg width= 300></img>
-<img src=../figs/setup-photo4.jpg height = 300></img>
+<img src=../figs/setup-photo3.jpg width= 300></img><br>
+<img src=../figs/setup-photo4.jpg width = 600></img>
 
 -	In the Particle Web IDE, select the Code Symbol (< >) on the left hand side, and select Create New App
 -	Name the app `sht31-single` or similar
