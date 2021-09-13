@@ -6,19 +6,26 @@ You will need
 * Assembled datalogger  from previous step
 * Bluetooth enabled Android or iOS device installed with Particle app downloaded from Google Play or Apple Store
 
-With the battery from the assembled logger plugged in, follow the steps below to activate. Steps to Activate Particle Boron. Because your logger is powered by a battery, you do not need the USB connector. After following the steps in the video, you should have an activated device, and have updated firmware to the device which is automatically uploaded via the cellular connection.
+With the battery from the assembled logger plugged in, follow the steps below to activate. [Steps to Activate Particle Boron](https://www.youtube.com/watch?v=xymSayKBGbg). Because your logger is powered by a battery, you do not need the USB connector. After following the steps in the video, you should have an activated device, and have updated firmware to the device which is automatically uploaded via the cellular connection.
 
-[![Watch the video](https://img.youtube.com/vi/xymSayKBGbg/maxresdefault.jpg)](https://www.youtube.com/watch?v=xymSayKBGbg)
+Click image to watch video 
 
-Testing
-Uploading Blink Sketch
-•	Once your Particle Boron is activated, it is best to complete a few tests to ensure your device is working properly.
-•	Log in to the Particle Web IDE
-•	Under Example apps, select the Blink an LED sketch from the list (Red arrow)
-•	Check that the name of the device you just setup matches what is indicated by the yellow arrow. If not, click the name and indicate the correct device from the Particle Device list
-•	Once the correct device is selected, click the Flash button (blue arrow). This will upload the sketch to the Boron. 
-•	As the sketch is uploading, you should see a series of flashes. Slow blinking green means the device is searching for signal. Slow blinking cyan means Signal is found. Fast blinking cyan means data transfer is occurring. You may see a brief magenta light as the sketch is flashed onto the device. See here for a guide to Particle Boron LED status indicators
-•	Once the sketch is successfully updated, you should see a blue blink from the LED located next to the USB connector on the Boron.
+<a href="https://www.youtube.com/watch?v=xymSayKBGbg"><img src=https://img.youtube.com/vi/xymSayKBGbg/maxresdefault.jpg width=400></img></a>
+
+# Testing
+
+## Uploading Blink Sketch
+
+* Once your Particle Boron is activated, it is best to complete a few tests to ensure your device is working properly.
+* Log in to the Particle Web IDE
+
+<img src=../figs/setup-capture1.png width= 200></img>
+
+* Under Example apps, select the Blink an LED sketch from the list (Red arrow)
+* Check that the name of the device you just setup matches what is indicated by the yellow arrow. If not, click the name and indicate the correct device from the Particle Device list
+* Once the correct device is selected, click the Flash button (blue arrow). This will upload the sketch to the Boron. 
+* As the sketch is uploading, you should see a series of flashes. Slow blinking green means the device is searching for signal. Slow blinking cyan means Signal is found. Fast blinking cyan means data transfer is occurring. You may see a brief magenta light as the sketch is flashed onto the device. See here for a guide to Particle Boron LED status indicators
+* Once the sketch is successfully updated, you should see a blue blink from the LED located next to the USB connector on the Boron.
 •	[Photo here indicating LED]
  
 
