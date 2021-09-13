@@ -3,8 +3,9 @@
 Activating Particle Boron is simple and Particle has good documentation to aid with the activation. 
 
 You will need
-* Assembled datalogger  from previous step
-* Bluetooth enabled Android or iOS device installed with Particle app downloaded from Google Play or Apple Store
+* Assembled datalogger from [previous step](logger-assembly.md)
+* Bluetooth enabled Android or iOS device installed with Particle app downloaded from [Google Play](https://play.google.com/store/apps/details?id=io.particle.android.app&hl=en_US&gl=US) or [Apple Store](https://apps.apple.com/us/app/particle-iot/id991459054)
+* One or more SHT31 sensor assemblies [from previous step](SHT-assembly.md)
 
 With the battery from the assembled logger plugged in, follow the steps below to activate. [Steps to Activate Particle Boron](https://www.youtube.com/watch?v=xymSayKBGbg). Because your logger is powered by a battery, you do not need the USB connector. After following the steps in the video, you should have an activated device, and have updated firmware to the device which is automatically uploaded via the cellular connection.
 
@@ -17,14 +18,14 @@ Click image to watch video
 ## Uploading Blink Sketch
 
 * Once your Particle Boron is activated, it is best to complete a few tests to ensure your device is working properly.
-* Log in to the Particle Web IDE
+* Log in to the [Particle Web IDE](https://build.particle.io/build)
 
 <img src=../figs/setup-capture1.png width= 500></img>
 
 - Under Example apps, select the Blink an LED sketch from the list (Red arrow)
 - Check that the name of the device you just setup matches what is indicated by the yellow arrow. If not, click the name and indicate the correct device from the Particle Device list
 - Once the correct device is selected, click the Flash button (blue arrow). This will upload the sketch to the Boron. 
-- As the sketch is uploading, you should see a series of flashes. See here for a guide to Particle Boron LED status indicators
+- As the sketch is uploading, you should see a series of flashes. See here for a guide to [Particle Boron LED status indicators](https://docs.particle.io/tutorials/device-os/led/boron/)
   - Slow blinking green means the device is searching for signal.
   - Slow blinking cyan means Signal is found.
   - Fast blinking cyan means data transfer is occurring.
@@ -86,7 +87,7 @@ void loop() {
  
 # I<sup>2</sup>C and cloud upload
 - The Particle console offers a convenient way to communicate directly with the datalogger, but does not serve for convenient data storage. To setup data logging from Particle Boron to Google Sheets, you will need to use the following steps.
-- Follow the steps to setup integration of Particle and Google Sheets (https://github.com/deancs/particlePostGoogle) . This script guides you through the process to setup an empty GoogleSheet to contain data, integrate a script using the Script Editor, create and use a Particle security token, and link your script with a Particle Webhook
+- Follow the steps to [setup integration of Particle and Google Sheets](https://github.com/deancs/particlePostGoogle). This script guides you through the process to setup an empty GoogleSheet to contain data, integrate a script using the Script Editor, create and use a Particle security token, and link your script with a Particle Webhook
 •	Create a new app in the Particle Web IDE and paste the following code and Flash the following script to your device.
 
 ```
