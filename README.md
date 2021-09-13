@@ -7,7 +7,7 @@ We have developed an open-platform temperature-humidity array for use in applica
 * Complete assembly of [Particle Boron dataloggers](#data-logger-assembly-particle-boron-with-multiplexer) (1x)
 * Fabricate 3d printed radiation shields (8x)
 * Fabricate [temperature and humidity sensor arrays](#SHT31-D-Sensor-arrays) (8x sensors)
-* Setting up Particle Boron-based dataloggers
+* [Setting up Particle Boron-based dataloggers](#Setup-and-test-Boron-dataloggers)
   * Testing Particle Boron
   * Programing Particle Boron
   * Setting up cellular cloud data upload
@@ -38,6 +38,15 @@ The SHT-31D sensors is an accurate temperature and humidity sensor with an accur
 <img src=figs/shtassembly_5.png width=200></img>
 <img src=figs/shtassembly_10.png width=200></img>
 
+# Setup and test Boron datagloggers
+
+Particle Boron offers a platform for interfacing with I<sup>2</sup>C sensors and connects to the web via cellular networks. 
+
+Follow the link to find complete instructions to <a href=pages/boron-setup.md>activate and test Boron dataloggers<a/> with the SHT-31 sensors. The link includes instructions to activate through the Particle app for Android and iOS, testing upload apps and measurements, setting up cloud integration with Google Sheets, and deployment.
+
+<img src=figs/setup-photo4.png height=200></img>
+<img src=figs/shtassembly_5.png width=200></img>
+
 # 3D printing
 
 We currently use two types of 3d printed radiation sheilds: a minimalist sheild, and a larger enclosed, multi-tiered sheild for longer-term abiotic monitoring. All sheilds are 3-printed in PETG use a PRUSA MK3S+ printer.
@@ -56,14 +65,3 @@ readme: print settings
 Prusa PETG ???
 infill?
 
-# Hardware
-
-for each of these need: Schematic, BOM, .brd Gerbers, PDF of top/bottom layers
-
-Datalogger (old) -- explanation of unreliability, link to Margay
-TCA breakout board
-
-#  Software
-
-Code for TCA using Arduino UNO...
-Code for data logger (old)
