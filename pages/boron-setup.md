@@ -21,11 +21,15 @@ Click image to watch video
 
 <img src=../figs/setup-capture1.png width= 500></img>
 
-* Under Example apps, select the Blink an LED sketch from the list (Red arrow)
-* Check that the name of the device you just setup matches what is indicated by the yellow arrow. If not, click the name and indicate the correct device from the Particle Device list
-* Once the correct device is selected, click the Flash button (blue arrow). This will upload the sketch to the Boron. 
-* As the sketch is uploading, you should see a series of flashes. Slow blinking green means the device is searching for signal. Slow blinking cyan means Signal is found. Fast blinking cyan means data transfer is occurring. You may see a brief magenta light as the sketch is flashed onto the device. See here for a guide to Particle Boron LED status indicators
-* Once the sketch is successfully updated, you should see a blue blink from the LED located next to the USB connector on the Boron.
+- Under Example apps, select the Blink an LED sketch from the list (Red arrow)
+- Check that the name of the device you just setup matches what is indicated by the yellow arrow. If not, click the name and indicate the correct device from the Particle Device list
+- Once the correct device is selected, click the Flash button (blue arrow). This will upload the sketch to the Boron. 
+- As the sketch is uploading, you should see a series of flashes. See here for a guide to Particle Boron LED status indicators
+  - Slow blinking green means the device is searching for signal.
+  - Slow blinking cyan means Signal is found.
+  - Fast blinking cyan means data transfer is occurring.
+  - Magenta light appearsa the app is flashed onto the device.
+- Once the sketch is successfully updated, you should see a blue blink from the LED located next to the USB connector on the Boron.
 
 <img src=../figs/setup-photo1.jpg width= 300></img>
 
