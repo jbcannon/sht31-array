@@ -11,7 +11,6 @@ We have developed an open-platform temperature-humidity array for use in applica
   * Testing Particle Boron
   * Programing Particle Boron
   * Setting up cellular cloud data upload
-* Sensor array deployment 
  
 <figure>
 <img src=figs/sensor-fig.PNG></img>
