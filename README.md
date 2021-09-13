@@ -44,10 +44,8 @@ Particle Boron offers a platform for interfacing with I<sup>2</sup>C sensors and
 
 Follow the link to find complete instructions to <a href=pages/boron-setup.md>activate and test Boron dataloggers<a/> with the SHT-31 sensors. The link includes instructions to activate through the Particle app for Android and iOS, testing upload apps and measurements, setting up cloud integration with Google Sheets, and deployment.
 
-<img src=figs/setup-capture1.png height=200></img>
-<img src=figs/setup-photo4.jpg width=200></img>
-
-https://github.com/jbcannon/sht31-array/blob/main/figs/setup-photo4.jpg
+<img src=figs/setup-capture1.png width=200></img>
+<img src=figs/setup-photo4.jpg height=200></img>
 
 # 3D printing
 
