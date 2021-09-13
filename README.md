@@ -7,7 +7,7 @@ We have developed an open-platform temperature-humidity array for use in applica
 * Complete assembly of [Particle Boron dataloggers](#data-logger-assembly-particle-boron-with-multiplexer) (1x)
 * Fabricate 3d printed radiation shields (8x)
 * Fabricate [temperature and humidity sensor arrays](#SHT31-D-Sensor-arrays) (8x sensors)
-* [Setting up Particle Boron-based dataloggers](#Setup-and-test-Boron-dataloggers)
+* [Setting up Particle Boron-based dataloggers](#Setup-and-test-boron-dataloggers)
   * Testing Particle Boron
   * Programing Particle Boron
   * Setting up cellular cloud data upload
