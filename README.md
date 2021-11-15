@@ -5,7 +5,7 @@ We have developed an open-platform temperature-humidity array for use in applica
  <p><p>Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. The material presented below details the construction of sensor and data loggers used in Cannon et al. XXXX. See manuscript for complete details on theory and applications.
 
 * Complete assembly of [Particle Boron dataloggers](#data-logger-assembly-particle-boron-with-multiplexer) (1x)
-* Fabricate 3d printed radiation shields (8x)
+* Fabricate [3d printed radiation shields](#3d-printed-radiation-shields) (8x shields)
 * Fabricate [temperature and humidity sensor arrays](#SHT31-D-Sensor-arrays) (8x sensors)
 * [Setting up Particle Boron-based dataloggers](#setup-and-test-boron-dataloggers)
   * Testing Particle Boron
@@ -52,22 +52,3 @@ Follow the link to find complete instructions to <a href=pages/boron-setup.md>ac
 
 <img src=figs/setup-capture1.png width=200></img>
 <img src=figs/setup-photo4.jpg height=200></img>
-
-# 3D printing
-
-We currently use two types of 3d printed radiation sheilds: a minimalist sheild, and a larger enclosed, multi-tiered sheild for longer-term abiotic monitoring. All sheilds are 3-printed in PETG use a PRUSA MK3S+ printer.
-
-Data loggers require 
-
-Include files and print settings for
-
-Large radiation sheild
-Minimal radiation sheild
-
-Photos/assembly instructions?
-
-
-readme: print settings
-Prusa PETG ???
-infill?
-
