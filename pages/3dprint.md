@@ -13,8 +13,8 @@ Our system uses a simple minimalist design for a 3d printed radiation shield. We
 
 You can obtain a 3D model of the minimalist shield by downloading [minimalist-shield.stl](../files/minimalist-shield.stl).
 
-<img src=../figs/shieldprint-1.png width=200></img>
-<img src=../figs/shieldprint-2.png width=200></img>
+<img src=../figs/shieldprint-1.png width=300></img>
+<img src=../figs/shieldprint-2.png width=300></img>
 
 Using PRUSA Slicer, or similar software, we recommend the following print settings
 
@@ -35,7 +35,7 @@ Most of these settings are the default values for “0.20mm QUALITY @MK3” in P
 
 In the Cannon et al. XXXX study, we testing radiation sheilds using a multi-fin design with 5 or 9 fins. You can obtain the 3D models for the components of the multi-fin shield by downloading [multi-fin-shield.zip](../files/multi-fin-shield.zip).
 
-<img src=../figs/shieldprint-4.png width=200></img><br>
+<img src=../figs/shieldprint-4.png width=400></img><br>
 <img src=../figs/shieldprint-5.png width=400></img>
 
 The [multi-fin-shield.zip](../files/multi-fin-shield.zip) file contains the following \*.stl files:
@@ -46,8 +46,10 @@ The [multi-fin-shield.zip](../files/multi-fin-shield.zip) file contains the foll
 4.  Radiation Shield Fin (Rad_Shd_Fin_V1.stl)
 5.	SHT31/iButton Sensor Holder (SHT31_iButton_plugV2.stl)
 
+Use the same settings as the minimalist shield. Some parts such as the Sensor Holder will need support, and others such as the Fins, Base, and Top, will not.
+
 You can print multiple copies of the Radiation Shield Fin to make any sized radiation shield
 
 Once printed, all parts can stacked and glued together (superglue or hot glue).
 
-<img src=../figs/shieldprint-6.jpg width=200></img>
+<img src=../figs/shieldprint-6.jpg width=400></img>
