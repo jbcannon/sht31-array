@@ -6,8 +6,7 @@ Our system uses a simple minimalist design for a 3d printed radiation shield. We
 * PRUSA I3 MK3S+ 3D printer, or similar
 * PrusaSlicer Software
 * PETG filament, we recommend white
-* Hot glue gun and glue cartridges
-* Cyanocoacrylate (CA) glue, or "Super glue"
+* Hot glue gun and glue cartridges or Cyanocoacrylate (CA) glue ("Super glue")
 
 ## Minmalist radiation sheild
 
