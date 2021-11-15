@@ -32,18 +32,18 @@ Most of these settings are the default values for “0.20mm QUALITY @MK3” in P
 
 ## Multi-fin radiation sheild
 
-In the Cannon et al. XXXX study, we testing radiation sheilds using a multi-fin design with 5 or 9 fins. You can obtain the 3D models for the components of the multi-fin shield by downloading [multi-fin-shield.zip](../files/multi-fin-shield.zip).
+In the Cannon et al. XXXX study, we testing radiation sheilds using a multi-fin design with 5 or 9 fins. You can obtain the 3D models for the components of the multi-fin shield by downloading the [multi-fin-shield](../files/multi-fin-shield/).
 
 <img src=../figs/shieldprint-4.png width=400></img><br>
 <img src=../figs/shieldprint-5.png width=400></img>
 
-The [multi-fin-shield.zip](../files/multi-fin-shield.zip) file contains the following \*.stl files:
+The [multi-fin-shield](../files/multi-fin-shield/) file contains the following \*.stl files:
 
-1.  Radiation Shield Vertical Mount (Rad_Shd_Vert_mount_V1.stl)
-2.	Radiation Shield Base (Rad_Shd_Base_V1.stl)
-3.	Radiation Shield Top (Rad_Shd_Top_V1.stl)
-4.  Radiation Shield Fin (Rad_Shd_Fin_V1.stl)
-5.	SHT31/iButton Sensor Holder (SHT31_iButton_plugV2.stl)
+1.  Radiation Shield Vertical Mount [Rad_Shd_Vert_mount_V1.stl](../files/multi-fin-shield/Rad_Shd_Vert_mount_V1.stl)
+2.	Radiation Shield Base [Rad_Shd_Base_V1.stl](..files/mult-fin-shield/Rad_Shd_Base_V1.stl)
+3.	Radiation Shield Top [Rad_Shd_Top_V1.stl](..files/multi-fin-shield/Rad_Shd_Top_V1.stl)
+4.  Radiation Shield Fin [Rad_Shd_Fin_V1.stl](..files/multi-fin-shield/Rad_Shd_Fin_V1.stl)
+5.	SHT31/iButton Sensor Holder [SHT31_iButton_plugV2.stl](..files/multi-fin-shield/SHT31_iButton_plugV2.stl)
 
 Use the same settings as the minimalist shield. Some parts such as the Sensor Holder will need support, and others such as the Fins, Base, and Top, will not.
 
