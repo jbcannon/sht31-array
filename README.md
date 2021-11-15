@@ -35,8 +35,15 @@ The SHT-31D sensors is an accurate temperature and humidity sensor with an accur
  
 <img src=figs/sht31-chip.jpg width=200></img>
 <img src=figs/shtassembly_5.png width=200></img>
-<img src=figs/shtassembly_10.png width=200></img>
 
+# 3D Printed radiation shields
+
+To house the SHT31-D sensors, we provide plans and printing instructions for two radiation shields, including a minimalist radiation shield and a mulit-fin radiation sheild. 
+
+Follow the link to find 3D models, photos, and printer settings for <a href=pages/3dprint.md>printing the radiation sheilds</a> on a PRUSA MK3 printer, or similar
+
+<img src=figs/shieldprint-3.jpg width=200></img>
+<img src=figs/shieldprint-6.jpg width=200></img>
 # Setup and test Boron dataloggers
 
 Particle Boron offers a platform for interfacing with I<sup>2</sup>C sensors and connects to the web via cellular networks. 
