@@ -8,7 +8,7 @@ Our system uses a simple minimalist design for a 3d printed radiation shield. We
 * PETG filament, we recommend white
 * Hot glue gun and glue cartridges or Cyanocoacrylate (CA) glue ("Super glue")
 
-## Minmalist radiation sheild
+## Minimalist radiation shield
 
 You can obtain a 3D model of the minimalist shield by downloading [minimalist-shield.stl](../files/minimalist-shield.stl).
 
@@ -26,13 +26,13 @@ Using PRUSA Slicer, or similar software, we recommend the following print settin
 | Infill | 25% |
 | Support material | Check yes to "Generate support material" and yes to "Support on build plate only" |
 
-Most of these settings are the default values for “0.20mm QUALITY @MK3” in PrusaSlicer software, with only the infill percentage increased and Nozzle/Bed temperatures adjusted to ensure to temperatures fall within range of the recommended temperatures for the brand/type of filament used.
+Most of these settings are the default values for “0.20mm QUALITY @MK3” in PrusaSlicer software, with only the infill percentage increased and Nozzle/Bed temperatures adjusted to ensure the temperatures fall within range of the recommended temperatures for the brand/type of filament used.
 
 <img src=../figs/shieldprint-3.jpg width=200></img>
 
-## Multi-fin radiation sheild
+## Multi-fin radiation shield
 
-In the Cannon et al. XXXX study, we testing radiation sheilds using a multi-fin design with 5 or 9 fins. You can obtain the 3D models for the components of the multi-fin shield by downloading the [multi-fin-shield](../files/multi-fin-shield/).
+In the Cannon et al. XXXX study, we test radiation shields using a multi-fin design with 5 or 9 fins. You can obtain the 3D models for the components of the multi-fin shield by downloading the [multi-fin-shield](../files/multi-fin-shield/).
 
 <img src=../figs/shieldprint-4.png width=400></img><br>
 <img src=../figs/shieldprint-5.png width=400></img>
@@ -49,6 +49,6 @@ Use the same settings as the minimalist shield. Some parts such as the Sensor Ho
 
 You can print multiple copies of the Radiation Shield Fin to make any sized radiation shield
 
-Once printed, all parts can stacked and glued together (superglue or hot glue).
+Once printed, all parts can be stacked and glued together (superglue or hot glue).
 
 <img src=../figs/shieldprint-6.jpg width=400></img>
