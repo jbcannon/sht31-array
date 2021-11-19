@@ -36,8 +36,8 @@ Click image to watch video
 
 ## Testing SHT31 sensor
 
--	After successfully uploading the Blink sketch, we will connect a single SHT-31 sensor and upload a sketch that will upload the readings to Particles Cloud platform.
--	Release the 4 wires connected to the I<sup>2</sup>C multiplexer PCB assembly, and place each wire into a bread board as shown below This will allow rapid connection of several single I<sup>2</sup>C devices to the Boron for testing and troubleshooting.
+-	After successfully uploading the Blink sketch, connect a single SHT-31 sensor and upload a sketch that will upload the readings to Particles Cloud platform.
+-	Release the 4 wires connected to the I<sup>2</sup>C multiplexer PCB assembly, and place each wire into a bread board as shown below. This will allow rapid connection of several single I<sup>2</sup>C devices to the Boron for testing and troubleshooting.
 -	Connect one of the assembled SHT31 sensors to the corresponding cables. If you followed our construction, the pin associations are
 
 | Wire | Pin |
