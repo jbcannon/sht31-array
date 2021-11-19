@@ -29,7 +29,7 @@ Click image to watch video
   - Slow blinking green means the device is searching for signal.
   - Slow blinking cyan means Signal is found.
   - Fast blinking cyan means data transfer is occurring.
-  - Magenta light appearsa the app is flashed onto the device.
+  - Magenta light appears when the app is flashed onto the device.
 - Once the sketch is successfully updated, you should see a blue blink from the LED located next to the USB connector on the Boron.
 
 <img src=../figs/setup-photo1.jpg width= 300></img>
