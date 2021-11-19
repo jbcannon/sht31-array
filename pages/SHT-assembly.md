@@ -15,7 +15,7 @@
 -	SHT31-D breakout board (e.g., from [Adafruit](https://www.adafruit.com/product/2857), [Aliexpress](https://www.aliexpress.com/item/32850554676.html) or [Amazon](https://www.amazon.com/Temperature-SHT31-D-Humidity-Breakout-Weather/dp/B073P6G2Q4/))
 -	Shielded cable, 4 wire, solid core 22 AWG (lengths will vary)
 -	Heat shrink tubing (1/4" and 1/2" diameter ([Amazon](https://www.amazon.com/gp/product/B01KYFZRQW))
--	JST or other 4-pin connectors (if your datalogger requries it). The Particle Boron-based dataloggers we recommend do not require connectors. [Amazon](https://www.amazon.com/Connector-Include-Ph2-0-Female-Ph2-0mm/dp/B08RHGT3W3/)
+-	JST or other 4-pin connectors (if your datalogger requires it). The Particle Boron-based dataloggers we recommend do not require connectors. [Amazon](https://www.amazon.com/Connector-Include-Ph2-0-Female-Ph2-0mm/dp/B08RHGT3W3/)
 
 ## Assembly
 
@@ -66,8 +66,8 @@ SDA/SAA | Green
 
 <img src=../figs/shtassembly_10.png width=200></img>
 
-- Repeat the above steps until you have 8 sesnor assemblies.
-- **If your data logger uses screw terminals** (e.g., the Particle Boron-based datalogger which we recommend) then assembly of the a single unit is complete. 
+- Repeat the above steps until you have 8 sensor assemblies.
+- **If your data logger uses screw terminals** (e.g., the Particle Boron-based datalogger which we recommend) then assembly of a single unit is complete. 
 - If if you would like to add a JST 4-pin plug or another connector for some devices, continue on to the additional steps. However, in our experience the JST plugs are brittle and thus somewhat finicky
 
 <hr>
@@ -78,7 +78,7 @@ SDA/SAA | Green
 <img src=../figs/shtassembly_11.png width=200></img>
 <img src=../figs/shtassembly_12.png width=200></img>
 
--Ensure the wires are lined up in the appropriate order as show in the wiring table below. Then apply solder to the end of the soldering iron (held in the clamp if possible), take a wire in each hand, and simultaneously place them in the solder on the iron tip. Once they have enough solder on them, lift them out together and allow the solder to cool to complete the connection. This process can be repeated until a strong, even connection is made between the two. 
+-Ensure the wires are lined up in the appropriate order as shown in the wiring table below. Then apply solder to the end of the soldering iron (held in the clamp if possible), take a wire in each hand, and simultaneously place them in the solder on the iron tip. Once they have enough solder on them, lift them out together and allow the solder to cool to complete the connection. This process can be repeated until a strong, even connection is made between the two. 
 
 Plug | Cable | Sensor
 -- | -- | --
