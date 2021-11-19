@@ -19,7 +19,7 @@ We have developed an open-platform temperature-humidity array for use in applica
 
  # Data logger Assembly (Particle Boron with multiplexer)
  
- Our system uses Particle Boron microcontrollers which have cellular network capabilities allowing remote data upload,  comprehensive documentation, and support a number of analog and digital devices using I<sup>2</sup>C or SPI. Our system uses multiple identically addressed SHT-31 sensors which requires a multiplexer to allow reading of multiple sensors, thus we have created a custom printed circuit board that needs to be ordered or made.
+ Our system uses Particle Boron microcontrollers which have cellular network capabilities for remote data upload,  comprehensive documentation, and support numerous analog and digital devices using I<sup>2</sup>C or SPI. Our system uses multiple identically addressed SHT-31 sensors, which requires a multiplexer to allow reading of multiple sensors, thus we have created a custom printed circuit board that needs to be ordered or made.
  
 <img src=figs/loggerassembly-10.jpg width=200></img>
 <img src=figs/tca-pcb-gerber.PNG height=200></img>
@@ -29,7 +29,7 @@ We have developed an open-platform temperature-humidity array for use in applica
 
  # SHT31-D Sensor arrays
 
-The SHT-31D sensors is an accurate temperature and humidity sensor with an accuracy of ±0.3°C and ±2% relative humidty. The sensor uses I<sup>2</sup>C connections and is therefore compatabile with a wide variety of other I<sup>2</sup>C digital sensors allowing building more complex micro-metereological stations.
+The SHT-31D sensor is an accurate temperature and humidity sensor with an accuracy of ±0.3°C and ±2% relative humidity. The sensor uses I<sup>2</sup>C connections and is therefore compatible with a wide variety of other I<sup>2</sup>C digital sensors, which allows for building more complex micro-meteorological stations.
 
  Follow the link to find complete instructions to <a href=pages/SHT-assembly.md>building SHT-31 sensor arrays</a>
  
@@ -38,9 +38,9 @@ The SHT-31D sensors is an accurate temperature and humidity sensor with an accur
 
 # 3D Printed radiation shields
 
-To house the SHT31-D sensors, we provide plans and printing instructions for two radiation shields, including a minimalist radiation shield and a mulit-fin radiation sheild. 
+To house the SHT31-D sensors, we provide plans and printing instructions for two radiation shield types, which include a minimalist radiation shield and a multi-fin radiation shield. 
 
-Follow the link to find 3D models, photos, and printer settings for <a href=pages/3dprint.md>printing the radiation sheilds</a> on a PRUSA MK3 printer, or similar
+Follow the link to find 3D models, photos, and printer settings for <a href=pages/3dprint.md>printing the radiation sheilds</a> on a PRUSA MK3 printer, or similar printer.
 
 <img src=figs/shieldprint-3.jpg width=200></img>
 <img src=figs/shieldprint-6.jpg width=200></img>
