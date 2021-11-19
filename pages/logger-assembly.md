@@ -1,6 +1,6 @@
 # Particle Boron datalogger assembly
 
-The Particle Boron is a development kit that support cellular network. This guide illustrates tools, materials, and instruction for connecting the Particle Boron to a Multiplexer to allow up to 8 identically addressed I<sup>2</sup>C busses. 
+The Particle Boron is a development kit that supports cellular network. This guide illustrates tools, materials, and instruction for connecting the Particle Boron to a Multiplexer to allow up to 8 identically addressed I<sup>2</sup>C busses. 
  
  **Please note that if you only need one or two SHT-31 sensors attached to a data logger, the multiplexer is unnecessary. Simply attach the Boron to the Terminal block, and insert a battery**. The remaining steps involving the multiplexer are unnecessary and can be skipped.
 
@@ -14,7 +14,7 @@ The Particle Boron is a development kit that support cellular network. This guid
 -	Adafruit Terminal Block Breakout FeatherWing ([Adafruit](https://www.adafruit.com/product/2926))
 -	3.7V Lithium Battery with 2-pin female plug ([AliExpress](https://www.aliexpress.com/item/32846169676.html))
  
- If you would like to link the datalogger to more than two SHT-31 sensors, or have identically addressed I<sup>2</sup>, you will also need materials to allow multiplexing capabilities. 
+ If you would like to link the datalogger to more than two SHT-31 sensors, or have identically addressed I<sup>2</sup>, you will also need the following materials to allow multiplexing capabilities. 
  
 - TCA9548A Multiplexer Module ([Adafruit](https://www.adafruit.com/product/2717) | [AliExpress](https://www.aliexpress.com/wholesale?SearchText=TCA9548A))
 -	TCA9548A PCB Board ([contact me](mailto:jeffery.cannon@jonesctr.org) for a few, or see below for ordering a custom PCB)
