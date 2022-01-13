@@ -2,7 +2,7 @@
 
 We have developed an open-platform temperature-humidity array for use in applications in forest and fire ecology. The following instructions provide step-by-step instructions for assembling the arrays and dataloggers. We also include software development and installation, and provide files to fabricate 3d-printed radiation shields, enclosures, and files necessary for manufacturing printed circuit boards for multiplexing.
 
- <p><p>Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. The material presented below details the construction of sensor and data loggers used in Cannon et al. XXXX. See manuscript for complete details on theory and applications.
+ <p><p>Each section begins with materials required for assembly. Please read all instructions before begining to ensure all necessary materials are available. The material presented below details the construction of sensor and data loggers used in Cannon et al. (in prep). See manuscript for complete details on theory and applications.
 
 * Complete assembly of [Particle Boron dataloggers](#data-logger-assembly-particle-boron-with-multiplexer) (1x)
 * Fabricate [3d printed radiation shields](#3d-printed-radiation-shields) (8x shields)
