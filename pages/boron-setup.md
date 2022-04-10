@@ -88,7 +88,7 @@ void loop() {
 # I<sup>2</sup>C and cloud upload
 - The Particle console offers a convenient way to communicate directly with the datalogger, but does not serve for convenient data storage. To setup data logging from Particle Boron to Google Sheets, you will need to use the following steps.
 - Follow the steps to [setup integration of Particle and Google Sheets](https://github.com/deancs/particlePostGoogle). This script guides you through the process to setup an empty GoogleSheet to contain data, integrate a script using the Script Editor, create and use a Particle security token, and link your script with a Particle Webhook
-•	Create a new app in the Particle Web IDE and paste the following code and Flash the following script to your device.
+•	Create a new app in the Particle Web IDE and paste the following code and Flash the following script to your device. This code takes measurements at an `interval` of 5 seconds and uploads data continuously to the Cloud. Note that this requires a continuous cellular network connection that may deplete battery life in ~10 days. See below for code to decrease upload rates and extend battery life. 
 
 ```
 #include <adafruit-sht31.h>
@@ -144,6 +144,149 @@ float readHumid(int bus, int addr) {
     sht31.begin(addr);
     float humid = sht31.readHumidity();
     return(humid);    
+}
+```
+
+* This code utilizes the `Particle.sleep()` function and local (RAM) data storage to increase battery life up to an estimated 180 days.
+* The function takes a reading ever `INTERVAL` (in minutes) and stores data locally. Once the total number of records colelcted reaches `RECORDS_PER_UPLOAD` the data is uploaded to the Cloud.
+* Note that < 80 kB of RAM data storage is available on Particle Boron, thus use caution if using `RECORDS_PER_UPLOAD` > 60 as RAM capacity may be exceeded.
+
+```
+#include <adafruit-sht31.h>
+#include <TCA9534.h>
+
+#define INTERVAL 15 // reading interval (in minutes), should be a divisor of 60 (e.g., 1, 2, 5, 6, 12, 15, 30)
+#define RECORDS_PER_UPLOAD 12 // how many readings to take before uploading
+char payload[RECORDS_PER_UPLOAD][1024] = {"","","","","","","","","","","",""};  // Put a set of apostrophes equal to the number of RECORDS_PER_UPLOAD.
+#define TIMEZONE -4
+
+// Instantiate Temperature - Humidity Sensor(s)
+#define TCAADDR 0x70 // Address of TCA9548A I2C Multiplexer
+#define PUBLICATION_DELAY 4000 // delay between Particle.publish() events (in ms) to prevent readings out of order.
+Adafruit_SHT31 sht31 = Adafruit_SHT31();
+FuelGauge fuel;
+SystemSleepConfiguration config;
+SYSTEM_MODE(SEMI_AUTOMATIC);
+
+int record = 0;
+
+void setup() {
+    /// Connect to cloud and sync time.
+    Particle.connect();
+    waitUntil(Particle.connected);
+    Particle.syncTime();
+    waitUntil(Particle.syncTimeDone);
+    delay(5s);
+    Particle.disconnect(CloudDisconnectOptions().graceful(true).timeout(30s));
+    Time.zone(TIMEZONE); 
+
+    Wire.begin();
+    RGB.control(true);
+    for(int i=0; i<4; i++) { // flash color to indicate successful connection
+        RGB.control(true);
+        RGB.color(255,255,255);
+        delay(200);
+        RGB.color(10,0,0);
+        delay(200);
+        RGB.color(0,0,0);
+    }
+}
+
+void loop() {
+    if(Time.minute() % INTERVAL == 0 & Time.second() == 0){
+        String current_time = Time.format(Time.now(), "%F %T");
+        //String current_time = Time.timeStr();
+        float t [8];
+        float h [8];
+        for (uint8_t bus=0; bus<8; bus++) {
+          RGB.control(true);
+          RGB.color(255,0,0);
+          t[bus] = readTemp(bus, 0x44);
+          h[bus] = readHumid(bus, 0x44);
+          if(isnan(t[bus])) t[bus] = -100;
+          if(isnan(h[bus])) h[bus] = -100;
+          delay(200);
+          RGB.color(0,0,0);
+          delay(200);
+        }
+        float soc = fuel.getNormalizedSoC();
+        float vbatt = fuel.getVCell();
+        sprintf(payload[record],"{\"time\":\"%s\",\"record\":%d,\"charge\":%.1f,\"Vbatt\":%.2f,\"temp0\":%.1f,\"hum0\":%.1f,\"temp1\":%.1f,\"hum1\":%.1f,\"temp2\":%.1f,\"hum2\":%.1f,\"temp3\":%.1f,\"hum3\":%.1f,\"temp4\":%.1f,\"hum4\":%.1f,\"temp5\":%.1f,\"hum5\":%.1f,\"temp6\":%.1f,\"hum6\":%.1f,\"temp7\":%.1f,\"hum7\":%.1f}",
+            current_time.c_str(), record, soc, vbatt, t[0], h[0], t[1], h[1], t[2], h[2], t[3], h[3], t[4], h[4], t[5], h[5], t[6], h[6], t[7], h[7]);
+        Serial.print("Record "); Serial.println(record);
+        Serial.println(payload[record]);
+        Serial.println("=========");
+        record = record + 1;        
+        
+        /// Once the appropriate number of records has been collected, upload them and dump data.
+        if(record == RECORDS_PER_UPLOAD) {
+            // reconnect to particle cloud
+            Serial.println("Connecting to the cloud");
+            if (!Particle.connected()) {
+                    Particle.connect();
+                    waitUntil(Particle.connected);
+                    if(Particle.connected()) Serial.println("Succesfully connected"); else Serial.println("Connection unsucessful");
+                    Particle.syncTime();
+                    waitUntil(Particle.syncTimeDone);
+            }
+            
+            Serial.println("Preparing to upload all records");
+            // upload all records
+            for(int i = 0; i < RECORDS_PER_UPLOAD; i++) {
+                Serial.print("Uploading record: ");
+                Serial.println(i);
+                Serial.print(payload[i]);
+                Serial.println("================");
+                bool success = try_to_publish(payload[i], 3); //post to GoogleSheets
+            }
+            record = 0;
+            Serial.println("Records uploaded to the cloud");
+            Serial.println("Discconecting");
+            Particle.disconnect(CloudDisconnectOptions().graceful(true).timeout(30s));
+            Serial.println("Discconected");
+        }
+        
+        Serial.println("Going to sleep");
+        /// go to sleep after measurement
+        config.mode(SystemSleepMode::STOP)
+            .duration(INTERVAL * 1000 * 60 - 30000) // sleep for 30 seconds shorter than interval
+            .flag(SystemSleepFlag::WAIT_CLOUD); // complete any cloud api activities before sleeping
+        System.sleep(config);
+        Serial.println("Waking up");
+    }
+}
+
+// Function to read temperature from select TCA and address (bus = 0-7, addr = 0x44 or 0x45)
+float readTemp(int bus, int addr) {
+    Wire.beginTransmission(TCAADDR);
+    Wire.write(1 << bus);
+    Wire.endTransmission();
+    if(!sht31.begin(addr)) return(-100); else {
+        float temp = sht31.readTemperature();
+        return(temp);    
+        }
+}
+
+// Function to read humidity from select TCA and address (bus = 0-7, addr = 0x44 or 0x45)
+float readHumid(int bus, int addr) {
+    Wire.beginTransmission(TCAADDR);
+    Wire.write(1 << bus);
+    Wire.endTransmission();
+    if(!sht31.begin(addr)) return(-100); else {
+        float humid = sht31.readHumidity();
+        return(humid);  
+    }
+}
+
+bool try_to_publish(char payload[1024], int tries) {
+    bool success = false;
+    for(int i = 0; i < tries; i++) {
+        if(success == false) {
+            success = Particle.publish("postGoogle", payload);
+            delay(PUBLICATION_DELAY);
+        }
+    }
+    return(success);
 }
 ```
 
